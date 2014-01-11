@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'True Lies';
+  src: url('/true-lies.ttf');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica;
+  background-size: cover;
+  font-size: 1.5em;
+}
+
+header, nav, main, footer {
+  margin: 40px;
+}
+
+a {
+  color: #DDD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+a:active {
+  color: 
+}
+
+a:visited {
+}
+
+a:not(:last-child):after {
+  content: ' —';
+  color: #DDD;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+  font-family: 'True Lies';
+}
+
+#shade {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background: black;
+  opacity: .66;
+  z-index: -1;
+}

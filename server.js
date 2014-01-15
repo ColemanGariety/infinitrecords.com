@@ -10,20 +10,20 @@ server.get('/', function (req, res) {
   res.render('layout', { yield: fs.readFileSync('./views/index.html') })
 })
 
-server.get('/blog', function (req, res) {
-  res.render('layout', { yield: fs.readFileSync('./views/blog.html') })
+server.get('/artist', function (req, res) {
+  res.render('layout', { yield: fs.readFileSync('./views/artist.html') })
 })
 
 server.get('/contact', function (req, res) {
   res.render('layout', { yield: fs.readFileSync('./views/contact.html') })
 })
 
-server.get('/rates', function (req, res) {
-  res.render('layout', { yield: fs.readFileSync('./views/rates.html') })
+server.get('/studio', function (req, res) {
+  res.render('layout', { yield: fs.readFileSync('./views/studio.html') })
 })
 
-server.get('/gear', function (req, res) {
-  res.render('layout', { yield: fs.readFileSync('./views/gear.html') })
+server.get('/store', function (req, res) {
+  res.render('layout', { yield: fs.readFileSync('./views/store.html') })
 })
 
 server.use(express.static(__dirname + '/public'))

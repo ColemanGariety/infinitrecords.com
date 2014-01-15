@@ -45,6 +45,7 @@ h1 {
 
 header *, nav, main, footer {
   z-index: 1000;
+  position: relative;
 }
 
 #shade {
@@ -52,9 +53,17 @@ header *, nav, main, footer {
   left: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   background: black;
-  opacity: .66;
-  z-index: -1;
+  opacity: .75;
   -webkit-transform: translateZ(0);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid white;
+  padding: 5px;
 }
